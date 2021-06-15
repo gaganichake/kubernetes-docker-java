@@ -1,0 +1,14 @@
+version: "3.7"
+
+# All containers created in single Docker Compose files automatically share the same network. No need to create a --network
+# Container name newsapp-container is used as a host name by Apache2 instead of 'localhost' or '127.0.0.1'.
+# See <VirtualHost *:80> directive in my-httpd.conf
+services:
+  newsapp-container:
+    image: gaganichake/news-app:1.0
+    ports:
+      - 8080:8080
+  apache2-container:
+    image: gaganichake/apache2:1.0
+    ports:
+      - 80:80
