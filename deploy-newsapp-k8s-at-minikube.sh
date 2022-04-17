@@ -8,7 +8,7 @@ minikube start
 # Open the Kubernetes dashboard in a browser:
 minikube dashboard
 
-# Create a Deployment
+# Create a Deployment (, replicaset & pod)
 # Use the kubectl create command to create a Deployment that manages a Pod. The Pod runs a Container based on the provided Docker image:
 kubectl create deployment news-app --image=localhost:5000/myfirstimage
 

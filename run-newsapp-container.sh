@@ -1,9 +1,9 @@
 !/bin/sh
 
-# Stop the Container if it already running. Optional.
+# Stop the Container if it already running. docker stop <containerName or containerID>
 docker stop newsapp-container
 
-# Force remove the Container if still running Optional.
+# Force remove the Container if still running. ocker rm <containerName or containerID>
 docker rm -f newsapp-container
 
 # Run the Container
