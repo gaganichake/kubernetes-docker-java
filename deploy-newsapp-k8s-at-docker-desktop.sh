@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/tutorials/hello-minikube/
-# echo Create a Deployment
+# echo Create a Deployment (, replicaset & pod)
 # Use the kubectl create command to create a Deployment that manages a Pod. The Pod runs a Container based on the provided Docker image:
 kubectl create deployment news-app --image=gaganichake/news-app:1.0
 
